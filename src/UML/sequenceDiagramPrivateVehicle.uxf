@@ -1,0 +1,103 @@
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><help_text>Space for diagram noteso</help_text><element><id>UMLGeneric</id><coordinates><x>1210</x><y>170</y><w>140</w><h>30</h></coordinates><panel_attributes>:RoutesPrivateVehicle
+bg=gray</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLFrame</id><coordinates><x>820</x><y>130</y><w>2390</w><h>1070</h></coordinates><panel_attributes>sd: get privateVehicles
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>810</x><y>300</y><w>230</w><h>40</h></coordinates><panel_attributes>GET /users/privatevehicles
+lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>210;20;10;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>1270</x><y>220</y><w>20</w><h>980</h></coordinates><panel_attributes>
+bg=gray</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1260</x><y>190</y><w>40</w><h>50</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>19;10;20;30</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>1570</x><y>170</y><w>140</w><h>30</h></coordinates><panel_attributes>_PrivateVehicleController_
+bg=gray</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>1630</x><y>220</y><w>20</w><h>120</h></coordinates><panel_attributes>
+bg=gray</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1280</x><y>250</y><w>370</w><h>40</h></coordinates><panel_attributes>getAllPrivateVehiclesOfUserByEmail(req, res)
+lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>350;20;10;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>1960</x><y>220</y><w>20</w><h>180</h></coordinates><panel_attributes>
+bg=gray</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>1910</x><y>170</y><w>140</w><h>30</h></coordinates><panel_attributes>_PrivateVehicleService_
+bg=gray</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1950</x><y>190</y><w>40</w><h>50</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>19;10;20;30</additional_attributes></element><element><id>Relation</id><coordinates><x>1640</x><y>270</y><w>340</w><h>40</h></coordinates><panel_attributes>getAllPrivateVehiclesOfUserByEmail(req: Request)
+lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>320;20;10;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>2220</x><y>170</y><w>140</w><h>30</h></coordinates><panel_attributes>_PrivateVehicleCrud_
+bg=gray</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>2280</x><y>220</y><w>20</w><h>240</h></coordinates><panel_attributes>
+bg=gray</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>2270</x><y>190</y><w>40</w><h>50</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>19;10;20;30</additional_attributes></element><element><id>Relation</id><coordinates><x>1970</x><y>330</y><w>330</w><h>40</h></coordinates><panel_attributes>getAllPrivateVehiclesOfUserByEmail(email: string)
+lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>310;20;10;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>2370</x><y>170</y><w>140</w><h>30</h></coordinates><panel_attributes>_:DataLayer_
+bg=gray</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1280</x><y>490</y><w>1160</w><h>50</h></coordinates><panel_attributes>selectDataLayer(PrivateVehicleSequelizeMysql, PrivateVehicleMysql)
+
+lt=&lt;-</panel_attributes><additional_attributes>1140;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>2410</x><y>190</y><w>40</w><h>310</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>19;10;20;290</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>2420</x><y>480</y><w>20</w><h>190</h></coordinates><panel_attributes>
+bg=gray</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1280</x><y>520</y><w>1160</w><h>40</h></coordinates><panel_attributes>Returns selected data layer
+lt=&lt;-</panel_attributes><additional_attributes>10;20;1140;20</additional_attributes></element><element><id>Relation</id><coordinates><x>1280</x><y>400</y><w>1020</w><h>40</h></coordinates><panel_attributes>new PrivateVehiclerud(dataLayer)
+lt=&lt;-</panel_attributes><additional_attributes>1000;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>1280</x><y>430</y><w>1020</w><h>40</h></coordinates><panel_attributes>Returns PrivateVehicleCrud instance
+lt=&lt;-</panel_attributes><additional_attributes>10;20;1000;20</additional_attributes></element><element><id>Relation</id><coordinates><x>1280</x><y>340</y><w>700</w><h>40</h></coordinates><panel_attributes>new PrivateVehicleService(PrivateVehicleCrud)
+lt=&lt;-</panel_attributes><additional_attributes>680;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>1280</x><y>370</y><w>700</w><h>40</h></coordinates><panel_attributes>Returns PrivateVehicleService instance
+lt=&lt;-</panel_attributes><additional_attributes>10;20;680;20</additional_attributes></element><element><id>Relation</id><coordinates><x>1280</x><y>280</y><w>370</w><h>40</h></coordinates><panel_attributes>new PrivateVehicleController(PrivateVehicleService)
+lt=&lt;-</panel_attributes><additional_attributes>350;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>1280</x><y>310</y><w>370</w><h>40</h></coordinates><panel_attributes>Returns PrivateVehicleController instance
+lt=&lt;-</panel_attributes><additional_attributes>10;20;350;20</additional_attributes></element><element><id>UMLFrame</id><coordinates><x>2300</x><y>230</y><w>620</w><h>240</h></coordinates><panel_attributes>alt_DATA_LAYERS
+--
+
+
+
+
+
+
+
+Mysql 
+-..
+Sequelize</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>2290</x><y>280</y><w>320</w><h>40</h></coordinates><panel_attributes>getAllPrivateVehiclesOfUserByEmail(email: string)
+lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>300;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>2290</x><y>410</y><w>480</w><h>40</h></coordinates><panel_attributes>getAllPrivateVehiclesOfUserByEmail(email: string)
+lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>460;20;10;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>2530</x><y>170</y><w>140</w><h>30</h></coordinates><panel_attributes>_PrivateVehicleMysql_
+bg=gray</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>2690</x><y>170</y><w>140</w><h>30</h></coordinates><panel_attributes>_PrivateVehicleSequelize_
+bg=gray</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>2580</x><y>190</y><w>40</w><h>80</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>19;10;20;60</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>2590</x><y>250</y><w>20</w><h>100</h></coordinates><panel_attributes>
+bg=gray</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>2750</x><y>380</y><w>20</w><h>90</h></coordinates><panel_attributes>
+bg=gray</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>2740</x><y>190</y><w>40</w><h>210</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>19;10;20;190</additional_attributes></element><element><id>Relation</id><coordinates><x>1950</x><y>390</y><w>40</w><h>450</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>19;10;20;430</additional_attributes></element><element><id>Relation</id><coordinates><x>2270</x><y>450</y><w>40</w><h>330</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>19;310;20;10</additional_attributes></element><element><id>Relation</id><coordinates><x>2410</x><y>660</y><w>40</w><h>560</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>19;540;20;10</additional_attributes></element><element><id>Relation</id><coordinates><x>2580</x><y>340</y><w>40</w><h>450</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>19;430;20;10</additional_attributes></element><element><id>Relation</id><coordinates><x>2740</x><y>460</y><w>40</w><h>500</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>19;480;20;10</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>2280</x><y>760</y><w>20</w><h>340</h></coordinates><panel_attributes>
+bg=gray</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>2750</x><y>940</y><w>20</w><h>150</h></coordinates><panel_attributes>
+bg=gray</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1620</x><y>330</y><w>40</w><h>380</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>19;10;20;360</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>1960</x><y>820</y><w>20</w><h>190</h></coordinates><panel_attributes>
+bg=gray</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>1630</x><y>690</y><w>20</w><h>190</h></coordinates><panel_attributes>
+bg=gray</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>2290</x><y>1000</y><w>480</w><h>40</h></coordinates><panel_attributes>Promise&lt;PrivateVehicle[] | null&gt;
+lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;20;460;20</additional_attributes></element><element><id>Relation</id><coordinates><x>2580</x><y>910</y><w>40</w><h>310</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>19;290;20;10</additional_attributes></element><element><id>Relation</id><coordinates><x>2740</x><y>1080</y><w>40</w><h>140</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>19;120;20;10</additional_attributes></element><element><id>UMLFrame</id><coordinates><x>2300</x><y>760</y><w>620</w><h>340</h></coordinates><panel_attributes>alt_DATA_LAYERS
+--
+
+
+
+
+
+
+
+
+
+Mysql 
+-..
+Sequelize</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>2590</x><y>770</y><w>20</w><h>150</h></coordinates><panel_attributes>
+bg=gray</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>2290</x><y>820</y><w>320</w><h>40</h></coordinates><panel_attributes>Promise&lt;PrivateVehicle[] | null
+lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;20;300;20</additional_attributes></element><element><id>Relation</id><coordinates><x>1970</x><y>910</y><w>330</w><h>40</h></coordinates><panel_attributes>Promise&lt;PrivateVehicle[] | null&gt;
+lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;20;310;20</additional_attributes></element><element><id>Relation</id><coordinates><x>1640</x><y>830</y><w>340</w><h>40</h></coordinates><panel_attributes>Promise&lt;PrivateVehicle[] | null&gt;
+lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;20;320;20</additional_attributes></element><element><id>Relation</id><coordinates><x>1280</x><y>750</y><w>370</w><h>40</h></coordinates><panel_attributes>Express: res
+lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;20;350;20</additional_attributes></element><element><id>Relation</id><coordinates><x>810</x><y>620</y><w>230</w><h>40</h></coordinates><panel_attributes>Express: res
+lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;20;210;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>960</x><y>170</y><w>140</w><h>30</h></coordinates><panel_attributes>:Server.ts
+bg=gray</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1620</x><y>190</y><w>40</w><h>50</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>19;10;20;30</additional_attributes></element><element><id>Relation</id><coordinates><x>1010</x><y>190</y><w>40</w><h>110</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>19;90;20;10</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>1020</x><y>280</y><w>20</w><h>430</h></coordinates><panel_attributes>
+bg=gray</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1030</x><y>360</y><w>260</w><h>40</h></coordinates><panel_attributes>new RoutesPrivateVehicle()
+lt=&lt;-</panel_attributes><additional_attributes>240;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>1030</x><y>400</y><w>260</w><h>40</h></coordinates><panel_attributes>Returns RoutesPrivateVehicle instance
+lt=&lt;-</panel_attributes><additional_attributes>10;20;240;20</additional_attributes></element><element><id>Relation</id><coordinates><x>1030</x><y>460</y><w>260</w><h>40</h></coordinates><panel_attributes>userRoutes()
+lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>240;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>1030</x><y>660</y><w>260</w><h>40</h></coordinates><panel_attributes>Express: res
+lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;20;240;20</additional_attributes></element><element><id>UMLNote</id><coordinates><x>220</x><y>0</y><w>580</w><h>530</h></coordinates><panel_attributes>Author Dax Riool
+
+In deze sequence diagram word beschreven hoe de route van 
+Get users/privatevehicles word uitgevoerd. Er word stap voor 
+stap beschreven welke functies worden aangeroepen en met welke
+parameters.
+
+Als eerst komt er een request binnen op de server.ts. 
+In dit bestand word een instantie van RoutesPrivateVehicle 
+aangemaakt. In deze instantie staan de routes die de requests afhandelen van private vehicles. 
+In dit bestand word ook de datalayer geselecteerd die word gebruikt om queries uit te voeren. 
+Deze datalayer word gebruikt om de PrivateVehicleCrud 
+aan te maken waarna deze word gebruikt om de PrivateVehicleService aan te maken.
+
+Vanuit de RoutesPrivateVehicle word de request doorgestuurd naar 
+de PirvateVehicleController met de paramaters req en res. Deze staan voor de request die is gemaakt 
+en de response die teruggegeven zal worden. 
+In deze controller word de service aangeroepen 
+met de req als parameter.
+
+In de service word de cookie van de request gepakt en daarmee word de email van de gebruiker
+opgehaald en word de PrivateVehicleCrud aangeroepen met als parameter email.
+
+In de PrivateVehicleCrud word de geselecteerde datalayer aangeroepen met als paramater email. 
+De datalayer zal een query maken waar alle private vehicles van de gebruiker 
+worden geselecteerd uit de database of als er geen vehicles in de database staan zal het null zijn.
+
+Nadat de query is uitgevoerd word het resultaat ge returned naar de PrivateVehicleCrud. 
+Het resultaat zal vervolgens steeds worden ge returned totdat 
+het kan worden gebruikt in de frontend
+bg=blue</panel_attributes><additional_attributes></additional_attributes></element></diagram>

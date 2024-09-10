@@ -1,0 +1,47 @@
+<diagram program="umletino" version="15.1"><zoom_level>8</zoom_level><element><id>UMLClass</id><coordinates><x>992</x><y>216</y><w>200</w><h>72</h></coordinates><panel_attributes>UserController
+--
+constructor(userService: UserInterface
+
+getAllUsers(req: any, res: any)
+getUserByEmail(req: any, res: any)
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>992</x><y>504</y><w>200</w><h>112</h></coordinates><panel_attributes>UserInterface
+--
+- user: UserMysql | UserSequalizeMysql
+constructor()
+createUser(name: string)
+getAllUsers()
+updateUser(id: number, name: string)
+deleteUser(id: number)
+getUserByEmail(email: string)</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>1104</x><y>304</y><w>80</w><h>56</h></coordinates><panel_attributes>Roept aan
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1000</x><y>664</y><w>184</w><h>104</h></coordinates><panel_attributes>UserMysql
+--
+-pool: mysql2.Pool
+createUser(name: string)
+getAllUsers()
+updateUser(id: number, name: string)
+deleteUser(id: number)
+getUserByEmail(email: string)</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1080</x><y>608</y><w>24</w><h>72</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;70;10;10</additional_attributes></element><element><id>Text</id><coordinates><x>1096</x><y>624</y><w>80</w><h>56</h></coordinates><panel_attributes>Roept aan
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1240</x><y>176</y><w>184</w><h>120</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
+UserCrudInterface
+--
+createUser(name: string)
+getAllUsers()
+updateUser(id: number, name: string)
+deleteUser(id: number)
+getUserByEmail(email: string)</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1184</x><y>288</y><w>152</w><h>288</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>170;10;170;340;10;340</additional_attributes></element><element><id>Text</id><coordinates><x>1200</x><y>528</y><w>80</w><h>56</h></coordinates><panel_attributes>Implements
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1176</x><y>288</y><w>192</w><h>448</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>220;10;220;540;10;540</additional_attributes></element><element><id>Text</id><coordinates><x>1192</x><y>688</y><w>80</w><h>56</h></coordinates><panel_attributes>Implements
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>832</x><y>408</y><w>120</w><h>80</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
+--
+userModel 
+email: string;
+department: string;
+role: string;
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>880</x><y>480</y><w>128</w><h>96</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;100;140;100</additional_attributes></element><element><id>Relation</id><coordinates><x>848</x><y>480</y><w>168</w><h>256</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;300;190;300</additional_attributes></element><element><id>Text</id><coordinates><x>880</x><y>720</y><w>104</w><h>56</h></coordinates><panel_attributes>Word gebruikt om de juiste type data aan te geven
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>888</x><y>560</y><w>104</w><h>56</h></coordinates><panel_attributes>Word gebruikt om de juiste type data aan te geven
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>984</x><y>344</y><w>216</w><h>88</h></coordinates><panel_attributes>UserService
+--
+constructor(-crudinterface: userCrudInterface)
+getAllUsers(req: any, res: any)
+getUserByEmail(req: any, res: any)</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1080</x><y>280</y><w>24</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;80;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>1080</x><y>424</y><w>24</w><h>96</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;100;10;10</additional_attributes></element><element><id>Text</id><coordinates><x>1096</x><y>456</y><w>80</w><h>56</h></coordinates><panel_attributes>Roept aan
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1192</x><y>288</y><w>104</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>110;10;110;130;10;130</additional_attributes></element><element><id>Text</id><coordinates><x>1208</x><y>392</y><w>80</w><h>56</h></coordinates><panel_attributes>Word gebruikt om de juiste type toe te passen
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element></diagram>

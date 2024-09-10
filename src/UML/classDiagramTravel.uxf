@@ -1,0 +1,167 @@
+<diagram program="umletino" version="15.1"><zoom_level>5</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>375</x><y>115</y><w>210</w><h>55</h></coordinates><panel_attributes>TravelController
+--
++constructor(
+-travelService: TravelServiceHandler
+): void
+--
++getDashboardData(req: any, res: any)
++getDashboardDataBetweenDates(req: any, res: any)</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>385</x><y>315</y><w>215</w><h>160</h></coordinates><panel_attributes>TravelCrud
+--
++ constructor(- dataLayer: TravelMysql | TravelSequelizeMysql)
+--
++getAllDashboardData(
+   filters?: { 
+      department?: string; 
+      vehicleType?: string; 
+      fuelType?: string;
+   }): Promise&lt;Dashboard[]&gt; 
+
++getFilteredDashboardData(
+   dates: { 
+      start: Date; 
+      end: Date }, 
+   filters?: { 
+      department?: string; 
+      vehicleType?: string; 
+      fuelType?: string; 
+   }): Promise&lt;Dashboard[]&gt;</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>275</x><y>545</y><w>210</w><h>150</h></coordinates><panel_attributes>TravelMysql
+--
+-pool: mysql2.Pool
+--
++getAllDashboardData(
+filters?: { 
+   department?: string; 
+   vehicleType?: string; 
+   fuelType?: string; 
+}): Promise&lt;Dashboard[]&gt; 
+
++getFilteredDashboardData(
+   dates: { 
+      start: Date; 
+      end: Date }, 
+   filters?: { 
+      department?: string; 
+      vehicleType?: string; 
+      fuelType?: string; 
+}): Promise&lt;Dashboard[]&gt;</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>785</x><y>195</y><w>115</w><h>150</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
+travelCrudInterface
+--
+
+--
+ +getAllDashboardData(filters?: {
+   department?: string; 
+   vehicleType?: string;           
+   fuelType?: string;              
+ }): Promise&lt;Dashboard[]&gt; 
+
++getFilteredDashboardData(
+  dates: { start: Date; end: Date },
+  filters?: {
+     department?: string; 
+     vehicleType?: string;
+     fuelType?: string;
+ }): Promise&lt;Dashboard[]&gt;</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>115</x><y>220</y><w>70</w><h>110</h></coordinates><panel_attributes>Dashboard
+--
+	dateTime: Date;
+	department: string;
+	travelType: string;
+	vehicleType: string;
+	fuelType: string;
+	gcorkm: number;
+	km: number;
+	euro: number;
+	gco: number;
+--
+
+constructor()
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>350</x><y>210</y><w>265</w><h>65</h></coordinates><panel_attributes>TravelServiceHandler
+--
++constructor(
+-crudInterface: travelCrudInterface, 
+-dateService: TravelDateValidationService
+): void
+--
++getDashboardData(): Promise&lt;Dashboard[]&gt;
++getDashboardDataBetweenDates(startDate: Date, endDate: Date): Promise&lt;Dashboard[]&gt;</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>530</x><y>545</y><w>210</w><h>150</h></coordinates><panel_attributes>TravelSequelizeMysql
+--
+
+--
++getAllDashboardData(
+filters?: { 
+   department?: string; 
+   vehicleType?: string; 
+   fuelType?: string; 
+}): Promise&lt;Dashboard[]&gt; 
+
++getFilteredDashboardData(
+   dates: { 
+      start: Date; 
+      end: Date }, 
+   filters?: { 
+      department?: string; 
+      vehicleType?: string; 
+      fuelType?: string; 
+}): Promise&lt;Dashboard[]&gt;</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>115</x><y>90</y><w>75</w><h>100</h></coordinates><panel_attributes>&lt;&lt;interface&gt;&gt;
+dashboard
+--
+	dateTime: Date;
+	department: string;
+	travelType: string;
+	vehicleType: string;
+	fuelType: string;
+	gcorkm: number;
+	km: number;
+	euro: number;
+	gco: number;
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>145</x><y>185</y><w>50</w><h>45</h></coordinates><panel_attributes>lt=&lt;&lt;.
+implements</panel_attributes><additional_attributes>10;10;10;70</additional_attributes></element><element><id>UMLClass</id><coordinates><x>400</x><y>0</y><w>160</w><h>75</h></coordinates><panel_attributes>RoutesTravel
+--
+-dataLayer: DataLayer 
+-crudInterface: TravelCrud 
+-dateService: TravelDateValidationService
+-service: TravelServiceHandler
+-controller: TravelController
+--
++makeGetRoutes(): void
++travelRoutes(): void
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>620</x><y>130</y><w>165</w><h>35</h></coordinates><panel_attributes>TravelDateValidationService
+--
+--
++validateDates(startDate: Date, endDate: Date): boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>475</x><y>70</y><w>30</w><h>55</h></coordinates><panel_attributes>lt=&lt;&lt;-
+Uses</panel_attributes><additional_attributes>10;90;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>475</x><y>165</y><w>30</w><h>55</h></coordinates><panel_attributes>lt=&lt;&lt;-
+Uses</panel_attributes><additional_attributes>10;90;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>450</x><y>470</y><w>30</w><h>85</h></coordinates><panel_attributes>lt=&lt;&lt;-
+Uses</panel_attributes><additional_attributes>10;150;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>550</x><y>470</y><w>30</w><h>85</h></coordinates><panel_attributes>lt=&lt;&lt;-
+Uses</panel_attributes><additional_attributes>10;150;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>595</x><y>340</y><w>225</w><h>85</h></coordinates><panel_attributes>lt=&lt;&lt;.
+Implements</panel_attributes><additional_attributes>430;10;430;150;10;150</additional_attributes></element><element><id>Relation</id><coordinates><x>735</x><y>340</y><w>150</w><h>300</h></coordinates><panel_attributes>lt=&lt;&lt;.
+Implements</panel_attributes><additional_attributes>210;10;210;580;10;580</additional_attributes></element><element><id>Relation</id><coordinates><x>385</x><y>340</y><w>505</w><h>410</h></coordinates><panel_attributes>lt=&lt;&lt;.
+Implements</panel_attributes><additional_attributes>990;10;990;800;10;800;10;710</additional_attributes></element><element><id>Relation</id><coordinates><x>610</x><y>160</y><w>110</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;-
+Uses</panel_attributes><additional_attributes>200;10;200;160;10;160</additional_attributes></element><element><id>Relation</id><coordinates><x>480</x><y>270</y><w>30</w><h>55</h></coordinates><panel_attributes>lt=&lt;&lt;-
+Uses</panel_attributes><additional_attributes>10;90;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>180</x><y>315</y><w>215</w><h>70</h></coordinates><panel_attributes>lt=&lt;&lt;.
+Implements</panel_attributes><additional_attributes>10;10;190;10;190;120;410;120</additional_attributes></element><element><id>Relation</id><coordinates><x>180</x><y>230</y><w>180</w><h>20</h></coordinates><panel_attributes>lt=&lt;&lt;.
+Implements</panel_attributes><additional_attributes>10;20;340;20</additional_attributes></element><element><id>Relation</id><coordinates><x>150</x><y>325</y><w>180</w><h>230</h></coordinates><panel_attributes>lt=&lt;&lt;.
+Implements</panel_attributes><additional_attributes>10;10;10;320;340;320;340;440</additional_attributes></element><element><id>Relation</id><coordinates><x>120</x><y>325</y><w>515</w><h>510</h></coordinates><panel_attributes>lt=&lt;&lt;.
+Implements</panel_attributes><additional_attributes>20;10;10;1000;1010;1000;1010;740</additional_attributes></element><element><id>UMLNote</id><coordinates><x>115</x><y>15</y><w>70</w><h>35</h></coordinates><panel_attributes>Author: Dannique Klaver
+bg=blue</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>400</x><y>175</y><w>65</w><h>25</h></coordinates><panel_attributes>TravelControler uses 
+TravelServiceHandler 
+for data retrieval
+bg=blue</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>410</x><y>275</y><w>70</w><h>35</h></coordinates><panel_attributes>TravelServiceHandler 
+uses TravelCrud 
+interface for 
+data Operations
+bg=blue</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>620</x><y>180</y><w>85</w><h>30</h></coordinates><panel_attributes>TravelServiceHandler uses 
+TravelDateValidationService 
+for date validation
+bg=blue</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>890</x><y>355</y><w>90</w><h>45</h></coordinates><panel_attributes>travelCrudInterface is 
+implemented by 
+TravelMysql, 
+TravelSequelizeMysql 
+and TravelCrud
+bg=blue</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>0</x><y>335</y><w>120</w><h>35</h></coordinates><panel_attributes>TravelMysql and
+TravelSequelizeMysql perform 
+data operations on Dashboard
+bg=blue</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>40</x><y>180</y><w>70</w><h>25</h></coordinates><panel_attributes>Dashboard implements 
+the dashboard interface
+bg=blue</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>570</x><y>20</y><w>80</w><h>35</h></coordinates><panel_attributes>RoutesTravel instantiate 
+instances of all the classes
+bg=blue</panel_attributes><additional_attributes></additional_attributes></element></diagram>

@@ -1,0 +1,162 @@
+<diagram program="umletino" version="15.1"><zoom_level>7</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLGeneric</id><coordinates><x>294</x><y>329</y><w>98</w><h>21</h></coordinates><panel_attributes>_:RoutesCarLoan_
+bg=gray</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>0</x><y>420</y><w>189</w><h>28</h></coordinates><panel_attributes>GET /"/cars/:startDate/:endDate/:fuelType?"
+lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>230;20;30;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>336</x><y>364</y><w>14</w><h>721</h></coordinates><panel_attributes>
+bg=gray</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>329</x><y>343</y><w>21</w><h>35</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>19;10;20;30</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>546</x><y>329</y><w>98</w><h>21</h></coordinates><panel_attributes>_:CarLoanController_
+bg=gray</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>588</x><y>364</y><w>14</w><h>77</h></coordinates><panel_attributes>
+bg=gray</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>343</x><y>385</y><w>259</w><h>28</h></coordinates><panel_attributes>getCarsAvailableBetweenDates(req, res)
+lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>350;20;10;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>1064</x><y>329</y><w>98</w><h>21</h></coordinates><panel_attributes>_:carLoanService_
+bg=gray</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>595</x><y>455</y><w>518</w><h>28</h></coordinates><panel_attributes>getCarsAvailableBetweenDates()
+lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>720;20;10;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>1169</x><y>329</y><w>98</w><h>21</h></coordinates><panel_attributes>_:CarLoanCrud_
+bg=gray</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>1211</x><y>518</y><w>14</w><h>280</h></coordinates><panel_attributes>
+bg=gray</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1204</x><y>343</y><w>21</w><h>196</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>19;10;20;260</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>1274</x><y>329</y><w>98</w><h>21</h></coordinates><panel_attributes>_:DataLayer_
+bg=gray</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1302</x><y>343</y><w>21</w><h>518</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>19;10;20;720</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>1309</x><y>847</y><w>14</w><h>133</h></coordinates><panel_attributes>
+bg=gray</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLFrame</id><coordinates><x>1225</x><y>651</y><w>434</w><h>168</h></coordinates><panel_attributes>alt_DATA_LAYERS
+--
+
+
+
+
+
+
+
+Mysql 
+-..
+Sequelize</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1218</x><y>672</y><w>224</w><h>28</h></coordinates><panel_attributes>getCarsAvailableBetweenDates()
+lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>300;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>1218</x><y>763</y><w>336</w><h>28</h></coordinates><panel_attributes>getCarsAvailableBetweenDates()
+lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>460;20;10;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>1386</x><y>329</y><w>98</w><h>21</h></coordinates><panel_attributes>_:CarLoanMysql_
+bg=gray</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>1498</x><y>329</y><w>98</w><h>21</h></coordinates><panel_attributes>_:CarLoanSequelize_
+bg=gray</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1421</x><y>343</y><w>21</w><h>336</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>19;10;20;460</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>1428</x><y>665</y><w>14</w><h>70</h></coordinates><panel_attributes>
+bg=gray</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>1540</x><y>756</y><w>14</w><h>63</h></coordinates><panel_attributes>
+bg=gray</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1533</x><y>343</y><w>21</w><h>427</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>19;10;20;590</additional_attributes></element><element><id>Relation</id><coordinates><x>1092</x><y>749</y><w>21</w><h>280</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>19;10;20;380</additional_attributes></element><element><id>Relation</id><coordinates><x>1204</x><y>791</y><w>21</w><h>259</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>19;350;20;10</additional_attributes></element><element><id>Relation</id><coordinates><x>1309</x><y>973</y><w>21</w><h>266</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>19;360;20;10</additional_attributes></element><element><id>Relation</id><coordinates><x>1421</x><y>728</y><w>21</w><h>336</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>19;460;20;10</additional_attributes></element><element><id>Relation</id><coordinates><x>1533</x><y>812</y><w>21</w><h>371</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>19;510;20;10</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>1211</x><y>1036</y><w>14</w><h>238</h></coordinates><panel_attributes>
+bg=gray</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>1540</x><y>1169</y><w>14</w><h>105</h></coordinates><panel_attributes>
+bg=gray</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>581</x><y>658</y><w>21</w><h>266</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>19;10;20;360</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>1099</x><y>1015</y><w>14</w><h>133</h></coordinates><panel_attributes>
+bg=gray</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>588</x><y>910</y><w>14</w><h>182</h></coordinates><panel_attributes>
+bg=gray</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1218</x><y>1204</y><w>336</w><h>28</h></coordinates><panel_attributes>Promise&lt;BusinessVehicle[]&gt;
+lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;20;460;20</additional_attributes></element><element><id>Relation</id><coordinates><x>1421</x><y>1148</y><w>21</w><h>224</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>19;300;20;10</additional_attributes></element><element><id>Relation</id><coordinates><x>1540</x><y>1267</y><w>21</w><h>112</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>19;140;20;10</additional_attributes></element><element><id>UMLFrame</id><coordinates><x>1225</x><y>1036</y><w>434</w><h>238</h></coordinates><panel_attributes>alt_DATA_LAYERS
+--
+
+
+
+
+
+
+
+
+
+Mysql 
+-..
+Sequelize</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>1428</x><y>1050</y><w>14</w><h>105</h></coordinates><panel_attributes>
+bg=gray</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1218</x><y>1078</y><w>224</w><h>28</h></coordinates><panel_attributes>Promise&lt;BusinessVehicle[]&gt;
+lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;20;300;20</additional_attributes></element><element><id>Relation</id><coordinates><x>1106</x><y>1071</y><w>119</w><h>28</h></coordinates><panel_attributes>Promise&lt;BusinessVehicle[]&gt;
+lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;20;150;20</additional_attributes></element><element><id>Relation</id><coordinates><x>595</x><y>1008</y><w>518</w><h>28</h></coordinates><panel_attributes>Promise&lt;BusinessVehicle[]&gt;
+lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;20;720;20</additional_attributes></element><element><id>Relation</id><coordinates><x>343</x><y>952</y><w>259</w><h>28</h></coordinates><panel_attributes>Express: res
+lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;20;350;20</additional_attributes></element><element><id>Relation</id><coordinates><x>49</x><y>644</y><w>126</w><h>28</h></coordinates><panel_attributes>Express: res
+lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;20;160;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>119</x><y>329</y><w>98</w><h>21</h></coordinates><panel_attributes>_:Server.ts_
+bg=gray</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>581</x><y>343</y><w>21</w><h>35</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>19;10;20;30</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>161</x><y>406</y><w>14</w><h>301</h></coordinates><panel_attributes>
+bg=gray</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>168</x><y>462</y><w>182</w><h>28</h></coordinates><panel_attributes>new RoutesCarLoan()
+lt=&lt;-</panel_attributes><additional_attributes>240;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>168</x><y>973</y><w>182</w><h>28</h></coordinates><panel_attributes>Returns RoutesCarLoaninstance
+lt=&lt;-</panel_attributes><additional_attributes>10;20;240;20</additional_attributes></element><element><id>Relation</id><coordinates><x>168</x><y>532</y><w>182</w><h>28</h></coordinates><panel_attributes>RoutesCarLoan()
+lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>240;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>168</x><y>672</y><w>182</w><h>28</h></coordinates><panel_attributes>Express: res
+lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;20;240;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>700</x><y>329</y><w>98</w><h>21</h></coordinates><panel_attributes>_:dateService_
+bg=gray</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>728</x><y>658</y><w>21</w><h>392</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>19;10;20;540</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>1099</x><y>700</y><w>14</w><h>49</h></coordinates><panel_attributes>
+bg=gray</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLFrame</id><coordinates><x>357</x><y>462</y><w>399</w><h>210</h></coordinates><panel_attributes>alt: error handling dates
+--
+
+
+
+
+
+
+
+error checking Correct
+-.
+error checking Incorrect</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>588</x><y>434</y><w>21</w><h>42</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;40</additional_attributes></element><element><id>Relation</id><coordinates><x>735</x><y>343</y><w>21</w><h>168</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;220</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>588</x><y>462</y><w>14</w><h>98</h></coordinates><panel_attributes>
+bg=gray</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>735</x><y>497</y><w>14</w><h>49</h></coordinates><panel_attributes>
+bg=gray</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>595</x><y>504</y><w>154</w><h>28</h></coordinates><panel_attributes>pareAndValidateDates(dates)
+lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>200;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>735</x><y>539</y><w>21</w><h>91</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;110</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>735</x><y>616</y><w>14</w><h>49</h></coordinates><panel_attributes>
+bg=gray</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>595</x><y>525</y><w>154</w><h>28</h></coordinates><panel_attributes>Valid
+lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;20;200;20</additional_attributes></element><element><id>Relation</id><coordinates><x>1092</x><y>518</y><w>147</w><h>28</h></coordinates><panel_attributes>getCarsAvailableBetweenDates()
+lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>170;20;30;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>588</x><y>581</y><w>14</w><h>84</h></coordinates><panel_attributes>
+bg=gray</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>588</x><y>553</y><w>21</w><h>42</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>10;10;10;40</additional_attributes></element><element><id>Relation</id><coordinates><x>595</x><y>623</y><w>154</w><h>28</h></coordinates><panel_attributes>pareAndValidateDates(dates)
+lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>200;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>595</x><y>644</y><w>154</w><h>28</h></coordinates><panel_attributes>handleError(error)
+lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;20;200;20</additional_attributes></element><element><id>Relation</id><coordinates><x>343</x><y>595</y><w>259</w><h>28</h></coordinates><panel_attributes>Express: res
+lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;20;350;20</additional_attributes></element><element><id>Relation</id><coordinates><x>343</x><y>847</y><w>980</w><h>35</h></coordinates><panel_attributes>selectDataLayer(CarLoanSequelizeMysql, CarLoanMysql)
+
+lt=&lt;-</panel_attributes><additional_attributes>1380;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>350</x><y>1246</y><w>980</w><h>35</h></coordinates><panel_attributes>Returns selected data layer
+lt=&lt;-</panel_attributes><additional_attributes>10;30;1380;10</additional_attributes></element><element><id>Relation</id><coordinates><x>1092</x><y>469</y><w>21</w><h>49</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>19;10;20;50</additional_attributes></element><element><id>Relation</id><coordinates><x>343</x><y>749</y><w>882</w><h>28</h></coordinates><panel_attributes>new carLoanCrud(dataLayer)
+lt=&lt;-</panel_attributes><additional_attributes>1240;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>336</x><y>1134</y><w>784</w><h>28</h></coordinates><panel_attributes>Returns carLoanService instance
+lt=&lt;-</panel_attributes><additional_attributes>10;20;1100;20</additional_attributes></element><element><id>Relation</id><coordinates><x>343</x><y>700</y><w>770</w><h>28</h></coordinates><panel_attributes>new carLoanService(DepartmentCrud)
+lt=&lt;-</panel_attributes><additional_attributes>1080;20;10;20</additional_attributes></element><element><id>UMLNote</id><coordinates><x>448</x><y>616</y><w>105</w><h>28</h></coordinates><panel_attributes>Error message response.
+bg=blue</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>434</x><y>980</y><w>105</w><h>28</h></coordinates><panel_attributes>CarLoan[] response.
+bg=blue</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLFrame</id><coordinates><x>728</x><y>483</y><w>399</w><h>210</h></coordinates><panel_attributes>alt: error handling dates
+--
+
+
+
+
+
+
+
+error checking Correct
+-.
+error checking Incorrect</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>595</x><y>588</y><w>518</w><h>28</h></coordinates><panel_attributes>Express: res
+lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;20;720;20</additional_attributes></element><element><id>Relation</id><coordinates><x>742</x><y>490</y><w>371</w><h>28</h></coordinates><panel_attributes>validateDateOrderAndFuture(dates)
+lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;20;510;20</additional_attributes></element><element><id>Relation</id><coordinates><x>742</x><y>518</y><w>371</w><h>28</h></coordinates><panel_attributes>Valid
+lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>510;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>742</x><y>609</y><w>371</w><h>28</h></coordinates><panel_attributes>validateDateOrderAndFuture(dates)
+lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;20;510;20</additional_attributes></element><element><id>Relation</id><coordinates><x>742</x><y>630</y><w>371</w><h>28</h></coordinates><panel_attributes>handleError(error)
+lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>510;20;10;20</additional_attributes></element><element><id>UMLNote</id><coordinates><x>770</x><y>546</y><w>105</w><h>28</h></coordinates><panel_attributes>Error message response.
+bg=blue</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>1099</x><y>588</y><w>14</w><h>70</h></coordinates><panel_attributes>
+bg=gray</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>1099</x><y>497</y><w>14</w><h>49</h></coordinates><panel_attributes>
+bg=gray</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1092</x><y>539</y><w>21</w><h>63</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>19;70;20;10</additional_attributes></element><element><id>Relation</id><coordinates><x>1092</x><y>651</y><w>21</w><h>63</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>19;70;20;10</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>1099</x><y>392</y><w>14</w><h>84</h></coordinates><panel_attributes>
+bg=gray</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1092</x><y>343</y><w>21</w><h>63</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>19;10;20;70</additional_attributes></element><element><id>Relation</id><coordinates><x>343</x><y>399</y><w>259</w><h>28</h></coordinates><panel_attributes>new CarLoanController(carLoanService)
+lt=&lt;-</panel_attributes><additional_attributes>350;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>343</x><y>1057</y><w>259</w><h>28</h></coordinates><panel_attributes>Returns DepartmentController instance
+lt=&lt;-</panel_attributes><additional_attributes>10;20;350;20</additional_attributes></element><element><id>UMLNote</id><coordinates><x>175</x><y>0</y><w>567</w><h>266</h></coordinates><panel_attributes>Get-verzoek:
+Een GET-verzoek wordt gedaan GET /"/cars/:startDate/:endDate/:fuelType?"
+
+
+Server initialiseert routesCarLoan:
+De server ontvangt het verzoek en initialiseert routesCarLoan.
+
+GET-methode roept CarLoanController aan:
+De GET-methode in routesCarLoan roept de CarLoanController aan.
+
+Controller verwerkt de aanvraag:
+De controller verwerkt het verzoek door de datums door te sturen naar de Dates-service en maakt een object met de CarLoanSearchFactory.
+
+Service valideert datum:
+De controller stuurt het object door naar de service. In de service wordt de datum gevalideerd met behulp van de ValidateDates-service.
+
+Validatie en foutafhandeling:
+Indien de validatie faalt, wordt een foutrespons teruggestuurd. Anders wordt het verzoek doorgestuurd naar de CRUD-laag.
+
+Initialisatie van de datalaag:
+De service initialiseert de datalaag en roept de juiste methode aan.
+
+Uitvoering van de query:
+De datalaag voert een query uit en stuurt de gevonden auto's terug als een array van BusinessVehicles.</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>210</x><y>406</y><w>98</w><h>49</h></coordinates><panel_attributes>Roept route aan
+carloan
+bg=blue</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>406</x><y>322</y><w>98</w><h>49</h></coordinates><panel_attributes>Roept route aan
+carloan met de get
+bg=blue</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>483</x><y>469</y><w>98</w><h>84</h></coordinates><panel_attributes>Parsed datums om 
+ze dates te maken
+en maakt een
+carloansearch object
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>749</x><y>385</y><w>147</w><h>56</h></coordinates><panel_attributes>Valideert de datums 
+verder met een check of het
+echt datums zijn
+en of ze op de goede volgorde zijn
+bg=blue</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>1211</x><y>462</y><w>98</w><h>49</h></coordinates><panel_attributes>roept de juiste datalayer
+aan
+bg=blue</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>1442</x><y>532</y><w>98</w><h>63</h></coordinates><panel_attributes>Doet de get request
+en haalt de gegevens
+op hier worden
+objecten gemaakt van
+de opgehaalde auto's
+bg=blue</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLNote</id><coordinates><x>42</x><y>63</y><w>98</w><h>49</h></coordinates><panel_attributes>@author Storm Verwer
+bg=blue</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>154</x><y>700</y><w>21</w><h>266</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>19;10;20;360</additional_attributes></element><element><id>Relation</id><coordinates><x>329</x><y>1085</y><w>21</w><h>49</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>19;10;20;50</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>161</x><y>945</y><w>14</w><h>301</h></coordinates><panel_attributes>
+bg=gray</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>336</x><y>1211</y><w>896</w><h>28</h></coordinates><panel_attributes>Returns carLoanCrud instance
+lt=&lt;-</panel_attributes><additional_attributes>10;20;1260;20</additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>336</x><y>1113</y><w>14</w><h>182</h></coordinates><panel_attributes>
+bg=gray</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>329</x><y>1288</y><w>21</w><h>63</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>19;10;20;70</additional_attributes></element><element><id>Relation</id><coordinates><x>154</x><y>1239</y><w>21</w><h>119</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>19;10;20;150</additional_attributes></element><element><id>Relation</id><coordinates><x>1092</x><y>1141</y><w>21</w><h>217</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>19;10;20;290</additional_attributes></element><element><id>Relation</id><coordinates><x>728</x><y>1029</y><w>21</w><h>322</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>19;10;20;440</additional_attributes></element><element><id>UMLFrame</id><coordinates><x>84</x><y>105</y><w>1764</w><h>1246</h></coordinates><panel_attributes>sd: get departments
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>1316</x><y>1218</y><w>21</w><h>56</h></coordinates><panel_attributes>
+bg=gray</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1309</x><y>1260</y><w>21</w><h>224</h></coordinates><panel_attributes>lt=.</panel_attributes><additional_attributes>19;300;20;10</additional_attributes></element></diagram>
